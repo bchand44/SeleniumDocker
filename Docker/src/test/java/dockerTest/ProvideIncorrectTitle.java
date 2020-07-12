@@ -21,7 +21,7 @@ public class ProvideIncorrectTitle {
 
     WebDriver driver;
     String baseURL, nodeURL;
-    String expectedTitle="GitHub";
+    String expectedTitle="GitHu";
 
     
 	
