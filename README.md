@@ -1,4 +1,4 @@
-Using Docker to run test, more to come 
+Using Docker to run test
 Locally running via jenkis 
 
 Travis CI Build Status 
