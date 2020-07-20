@@ -24,7 +24,7 @@ public class TestBase {
 	public void setTestConfigs() throws MalformedURLException
 	{
 
-		if(runEnviroment.equalsIgnoreCase("docker"))
+		if(runEnviroment.equalsIgnoreCase("Docker"))
 		{
 			nodeURL = "http://localhost:4444/wd/hub";
 			DesiredCapabilities capability = DesiredCapabilities.chrome();
