@@ -23,34 +23,15 @@ import org.testng.annotations.*;
 
 
 
-public class ProvideCorrectTitle {
+public class ProvideCorrectTitle extends TestBase{
 
-    WebDriver driver;
-    String baseURL, nodeURL;
+   
     String expectedTitle="The world’s leading software development platform · GitHub";
-    
-
-    
-	
-	
-	@BeforeTest
-    public void setUp() throws MalformedURLException, InterruptedException {
-       
-		
-		baseURL = "http://github.com";
-        nodeURL = "http://localhost:4444/wd/hub";
-        DesiredCapabilities capability = DesiredCapabilities.chrome();
-        capability.setBrowserName("chrome");
-        
-        capability.setPlatform(Platform.ANY);
-        driver = new RemoteWebDriver(new URL(nodeURL), capability);
-        
-    }
-
+    //title
    
     @Test
     public void sampleTest() throws InterruptedException {
-        driver.get(baseURL);
+       
         driver.manage().window().maximize();
         String title= driver.getTitle();
         System.out.println(title);
@@ -59,9 +40,5 @@ public class ProvideCorrectTitle {
 
     }
     
-    @AfterTest
-    public void afterTest() {
-        driver.quit();
-    }
-    
+  
 }

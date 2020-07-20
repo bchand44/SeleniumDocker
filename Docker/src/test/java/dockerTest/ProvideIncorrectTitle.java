@@ -17,30 +17,14 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class ProvideIncorrectTitle {
+public class ProvideIncorrectTitle extends TestBase {
 
-    WebDriver driver;
+   
     String baseURL, nodeURL;
     String expectedTitle="The world’s leading software development platform · GitHub";
-
+    //
     
-	
-	
-	@BeforeTest
-    public void setUp() throws MalformedURLException, InterruptedException {
-        baseURL = "http://github.com";
-        nodeURL = "http://localhost:4444/wd/hub";
-        DesiredCapabilities capability = DesiredCapabilities.chrome();
-        capability.setBrowserName("chrome");
-        capability.setPlatform(Platform.ANY);
-        driver = new RemoteWebDriver(new URL(nodeURL), capability);
-        
-    }
 
-    @AfterTest
-    public void afterTest() {
-        driver.quit();
-    }
     @Test
     public void sampleTest() throws InterruptedException {
     	
