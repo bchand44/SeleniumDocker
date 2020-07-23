@@ -28,8 +28,7 @@ public class ProvideIncorrectTitle extends TestBase {
     @Test
     public void sampleTest() throws InterruptedException {
     	
-    	driver.get(baseURL);
-        driver.manage().window().maximize();
+    	
         String title= driver.getTitle();
         System.out.println(title);
         Assert.assertEquals(title,expectedTitle,"Title is not correct");

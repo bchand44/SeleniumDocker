@@ -31,6 +31,8 @@ public class TestBase {
 			capability.setBrowserName("chrome");
             capability.setPlatform(Platform.ANY);
 			driver = new RemoteWebDriver(new URL(nodeURL), capability);
+			driver.get(baseURl);
+			driver.manage().window().maximize();
 		}
 		else if(runEnviroment.equalsIgnoreCase("local")) {
 
