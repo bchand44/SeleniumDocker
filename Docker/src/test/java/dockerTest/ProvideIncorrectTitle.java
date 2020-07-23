@@ -22,7 +22,7 @@ public class ProvideIncorrectTitle extends TestBase {
    
     String baseURL, nodeURL;
     String expectedTitle="The world’s leading software development platform · GitHub";
-    //
+    
     
 
     @Test
