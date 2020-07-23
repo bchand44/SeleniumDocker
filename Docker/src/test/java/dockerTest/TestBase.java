@@ -27,7 +27,7 @@ public class TestBase {
 		if(runEnviroment.equalsIgnoreCase("docker"))
 		{
 			nodeURL = "http://localhost:4444/wd/hub";
-			DesiredCapabilities capability = new DesiredCapabilities();
+			DesiredCapabilities capability = DesiredCapabilities.chrome();
 			capability.setBrowserName("chrome");
             capability.setPlatform(Platform.ANY);
 			driver = new RemoteWebDriver(new URL(nodeURL), capability);
