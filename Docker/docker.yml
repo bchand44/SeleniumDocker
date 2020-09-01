@@ -1,5 +1,5 @@
 # To execute this docker-compose yml file use `docker-compose -f <file_name> up`
-# Add the `-d` flag at the end for detached e
+# Add the `-d` flag at the end for detached exe
 version: "3"
 services:
   selenium-hub:
